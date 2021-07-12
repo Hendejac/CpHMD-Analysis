@@ -35,3 +35,8 @@ This is the python library and composed of 4 classes and 2 functions
 ### CpHMD_Analysis_Example_AMBER.ipynb
 This jupyter notebook is a step-by-step walk through of how to use load, process, and plot your lambda and log files. 
 This juptyer notebook will make for a starting template for your CpHMD project.
+
+### amber_example_data
+The included jupyter notebook can be run on the amber_example_data, which is provide in two directories sample_1 and sample_2.
+In the directory "sample_1" is a set of lambda files and a log file from an initial run of pH-based replica exchange of CpHMD using implicit solvent (solvent model: GBNeck2) and "sample_2" are the set of lambda files and a log file from the restart of the simulation. 
+This simulation was conducted on a small test case protein BBL (PDBid: 1W4H). 
