@@ -13,7 +13,7 @@ Since CpHMD is often used with a pH-based replica exchange protocol the library 
 
 # What's Included? 
 
-### cphmdanalysis.py 
+### 1 - cphmdanalysis.py 
 This is the python library and composed of 4 classes and 2 functions
 #### Included Classes
 1.) class lambda_data
@@ -32,11 +32,20 @@ This is the python library and composed of 4 classes and 2 functions
 
 *Does the same thing as the "class log_analysis_charmm," but for Amber formatted log files.*
 
-### CpHMD_Analysis_Example_AMBER.ipynb
+### 2 - CpHMD_Analysis_Example_AMBER.ipynb
 This jupyter notebook is a step-by-step walk through of how to use load, process, and plot your lambda and log files. 
 This juptyer notebook will make for a starting template for your CpHMD project.
 
-### amber_example_data
+### 3 - amber_example_data
 The included jupyter notebook can be run on the amber_example_data, which is provide in two directories sample_1 and sample_2.
 In the directory "sample_1" is a set of lambda files and a log file from an initial run of pH-based replica exchange of CpHMD using implicit solvent (solvent model: GBNeck2) and "sample_2" are the set of lambda files and a log file from the restart of the simulation. 
 This simulation was conducted on a small test case protein BBL (PDBid: 1W4H). 
+
+# Background
+
+In CpHMD simulations each titratable site, *i*, is treated as a continuous titration coordinate λ<sub>*i*</sub>, which is bound between 0 and 1, to govern the progress of that titratable site's protonation/deprotonation.
+In practice the λ-value does not always sample exactly either 0 or 1, so a cutoff of 0.2 is used to define whether a given titratable site is protonated or deprotonated. 
+
+<p align="center">
+ <img width="600" src="lambda_intro.png">
+</p>
