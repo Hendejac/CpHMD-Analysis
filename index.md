@@ -80,4 +80,4 @@ For greater detail on λ- and χ-values please read the following articles liste
 
 [Continuous Constant pH Molecular Dynamics in Explicit Solvent with pH-based Replica Exchange](https://pubs.acs.org/doi/abs/10.1021/ct200146j?casa_token=Z4fT4L4XlOQAAAAA:_vvgxj40IgV07Wb-ZlYTVr8GG4xL4dJcWFOiW9rzOWBA_i8rAn0wekn570l40LTH-HxGiPQ0L4_svDMH)
 
-For a full range of articles on the development and usage of CpHMD please visit the Shen Lab [website](https://www.computchem.org/publications).
+For a full range of articles on the development and usage of CpHMD please visit the [Shen Lab website](https://www.computchem.org/publications).
