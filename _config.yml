@@ -1,1 +1,9 @@
 theme: jekyll-theme-minimal
+title: <a href="https://hendejac.github.io/CpHMD-Analysis/">Continuous Constant-pH Molecular Dynamics Lambda and Log File Parser</a> # your name (or website title) here
+description: > # your text below (remove <br> elements if you don't need line breaks)
+  A python library designed to parse Lambda and Log files from CpHMD simulations.
+  <br>
+  <br>
+  <a href="https://hendejac.github.io/">Return to Portfolio</a>
+  <br>
+theme: jekyll-theme-minimal
