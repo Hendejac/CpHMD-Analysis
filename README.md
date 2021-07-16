@@ -72,6 +72,58 @@ In these cases an additional coordinate, χ, is used.
 Like the λ-value, the χ-value also continuously moves between 0 and 1 representing one or the other tautomeric states and is defined with a cutoff of 0.2.
 For greater detail on λ- and χ-values please read the following articles listed in the next section.
 
+# Example Plots and Outputs
+
+For a step-by-step walk through on how to reproduce the following examples please see the 'CpHMD_Analysis_Example_AMBER.ipynb' jupyter notebook.
+
+## Running Unprotonated Fractions
+
+<p align="center">
+ <img width="1000" src="images/s_conv.png">
+</p>
+
+This is an example showing the running unprotonated fraction at each pH over time. 
+This type of plot is commonly used to check the convergence of the unprotonated fractions and quality of the pK<sub>a</sub> values. 
+After the lambda files have been loaded and processed with CpHMD-Analysis library these plots can be generated simply with the following command.
+
+```
+plotting.plot_running_s(ph_objects, phs, resids, titles, xlabel='Time [ns]', steps_to_time_conversion=(1/1000))
+```
+
+## Titration Curves
+
+<p align="center">
+ <img width="1000" src="images/titration_curves.png">
+</p>
+
+Here is an example of titration curve plots. 
+The red line indicates the pK<sub>a</sub>. 
+Again, plots like this can be easily made with the following command.
+
+```
+plotting.plot_titration_curves(ph_objects, phs, resids, titles, xrange=[2,8])
+```
+
+## pK<sub>a</sub> outputs
+
+Using the following command, the pK<sub>a</sub>s can be output after the lambda files have been processed. 
+
+```
+pkas = pka(phs, ph_objects)
+```
+
+| Resids | pK<sub>a</sub>s | Hill Coefficients |
+|-------:|----------------:|------------------:|
+| 5      | 3.4             | 0.82 | 
+| 17     | 4.1             | 0.89 |
+| 18     | 7.1             | 0.89 |
+| 21     | 2.6             | 0.82 |
+| 37     | 3.7             | 0.74 |
+| 38     | 2.5             | 0.77 |
+| 40     | 4.1             | 0.76 |
+| 42     | 6.1             | 0.89 |
+
+
 # Futher Reading
 
 [Constant-pH Molecular Dynamics Using Continuous Titration Coordinates](https://onlinelibrary.wiley.com/doi/full/10.1002/prot.20128?casa_token=8B4Dwn15TYwAAAAA%3A6PqtPhvsXLT6fC8966mRPL9j5jvzBVIe_8usNcO1Nk5mX_U3mAmRKMbCxM-Zo8zavUoeVfqWgicGWjcc)
