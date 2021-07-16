@@ -82,9 +82,9 @@ For a step-by-step walk through on how to reproduce the following examples pleas
  <img width="1000" src="s_conv.png">
 </p>
 
-This is an example of the unprotonated fraction at each pH over time. 
+This is an example showing the running unprotonated fraction at each pH over time. 
 This type of plot is commonly used to check the convergence of the unprotonated fractions and quality of the pK<sub>a</sub> values. 
-After the lambda files have been loaded and process with CpHMD-Analysis library these plots can be generated simply with the following command.
+After the lambda files have been loaded and processed with CpHMD-Analysis library these plots can be generated simply with the following command.
 
 ```
 plotting.plot_running_s(ph_objects, phs, resids, titles, xlabel='Time [ns]', steps_to_time_conversion=(1/1000))
@@ -96,7 +96,7 @@ plotting.plot_running_s(ph_objects, phs, resids, titles, xlabel='Time [ns]', ste
  <img width="1000" src="titration_curves.png">
 </p>
 
-Here an example of titraction curves plots is shown. 
+Here is an example of titration curve plots. 
 The red line indicates the pK<sub>a</sub>. 
 Again, plots like this can be easily made with the following command.
 
