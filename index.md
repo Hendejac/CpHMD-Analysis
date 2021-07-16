@@ -1,4 +1,4 @@
-# Continuous Constant-pH Molecular Dynamics Analysis 
+# Continuous Constant-pH Molecular Dynamics Analysis - A Python Library  
 
 <p align="center">
  <img width="600" src="main.png">
@@ -9,16 +9,16 @@
 The purpose of the CpHMD-Analysis tool is to aid users in processing lambda and log files from Constant pH Molecular Dynamics (CpHMD) simulations run from the molecular dynamics software packages in [Amber](https://ambermd.org/) and [CHARMM](https://www.charmm.org/).
 This python library is equiped to calculate the unprotonated fraction, pure and mixed states, running unprotonated fractions, and pK<sub>a</sub>s of titratable residues from the lambda files produced by CpHMD simulations.
 Additionally, functions have been added to the library to make plotting the running unprotonated fractions and titrations curves quick and easy. 
-Since CpHMD is often used with a pH-based replica exchange protocol the library also can calculate exchange statics and plot replica walks. 
+Since CpHMD is often used with a pH-based replica exchange protocol the library also can calculate exchange statics and plot the replica walks. 
 
 # What's Included? 
 
 ### 1 - cphmdanalysis.py 
-This is the python library and composed of 4 classes and 2 functions
+This is the python library and is composed of 4 classes and 2 functions.
 #### Included Classes
 1.) class lambda_data
 
-*This class allows you to load lambda files and calculate the unprotated fractions and compute the running of the unprotated fractions.*
+*This class allows you to load lambda files and calculate the unprotated fractions and compute the running unprotated fractions over the simulation time.*
 
 2.) class plotting_lambda_data
 
@@ -33,12 +33,12 @@ This is the python library and composed of 4 classes and 2 functions
 *Does the same thing as the "class log_analysis_charmm," but for Amber formatted log files.*
 
 ### 2 - CpHMD_Analysis_Example_AMBER.ipynb
-This jupyter notebook is a step-by-step walk through of how to use load, process, and plot your lambda and log files. 
-This juptyer notebook will make for a starting template for your CpHMD project.
+This jupyter notebook is a step-by-step walk through of how to load, process, and plot your lambda and log files. 
+This juptyer notebook can be used as a starting point for your CpHMD project.
 
 ### 3 - amber_example_data
 The included jupyter notebook can be run on the amber_example_data, which is provide in two directories sample_1 and sample_2.
-In the directory "sample_1" is a set of lambda files and a log file from an initial run of pH-based replica exchange of CpHMD using implicit solvent (solvent model: GBNeck2) and "sample_2" are the set of lambda files and a log file from the restart of the simulation. 
+In the directory "sample_1" there is a set of lambda files and a log file from an initial run of pH-based replica exchange of CpHMD using implicit solvent (solvent model: GBNeck2) and "sample_2" has a set of lambda files and a log file from the restart of the simulation. 
 This simulation was conducted on a small test case protein BBL (PDBid: 1W4H). 
 
 # Background
@@ -70,7 +70,7 @@ In the Henderson-Hasselbalch equation *n* is the Hill coefficient, which represe
 One detail that you might be wondering about is the handling of tautomeric state of the titratable residues such as Histidine, Aspartic Acid, and Glutamic Acid.
 In these cases an additional coordinate, χ, is used. 
 Like the λ-value, the χ-value also continuously moves between 0 and 1 representing one or the other tautomeric states and is defined with a cutoff of 0.2.
-For greater detail on λ- and χ-values please read the following articles listed in the next section.
+For greater detail on λ- and χ-values please read the articles in the **further reading section**.
 
 # Example Plots and Outputs
 
@@ -96,7 +96,7 @@ plotting.plot_running_s(ph_objects, phs, resids, titles, xlabel='Time [ns]', ste
  <img width="1000" src="titration_curves.png">
 </p>
 
-Here is an example of titration curve plots. 
+Here is an example of the titration curve plots. 
 The red line indicates the pK<sub>a</sub>. 
 Again, plots like this can be easily made with the following command.
 
