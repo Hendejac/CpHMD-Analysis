@@ -58,8 +58,8 @@ Using the λ-values with the stated cutoff from a simulation at a single pH we c
 </p>
 
 Where *ρ*<sub>*i*</sub><sup>*unprot*</sup> and *ρ*<sub>*i*</sub><sup>*prot*</sup> are the probabilities that a given titratable site is either unprotonated or protonated, respectively.
-Keep in mind that this calculation exludes λ-values in a mixed state, meaning the λ-value falls between 0.2 and 0.8.
-Calculating the *S*<sub>*i*</sub><sup>*unprot*</sup> as function time provides a good indication to the convergence of you titratable sites protonation states in a CpHMD simulation, and is shown in the jupyter notebook tutorial (CpHMD_Analysis_Example_AMBER.ipynb). 
+Keep in mind that this calculation excludes λ-values in a mixed state, meaning the λ-value falls between 0.2 and 0.8.
+Calculating the *S*<sub>*i*</sub><sup>*unprot*</sup> as a function of time provides a good indication of the convergence of the titratable sites' protonation state in a CpHMD simulation, an example of this is shown in the jupyter notebook tutorial (CpHMD_Analysis_Example_AMBER.ipynb). 
 By calculating the *S*<sub>*i*</sub><sup>*unprot*</sup> at each simulated pH and fitting these points to the generalized Henderson-Hasselbalch equation the pK<sub>a</sub> can be calculated.
  
 <p align="center">
