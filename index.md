@@ -18,7 +18,7 @@ This is the python library and is composed of 4 classes and 2 functions.
 #### Included Classes
 1.) class lambda_data
 
-*This class allows you to load lambda files and calculate the unprotonated fractions and compute the running unprotonated fractions over the simulation time.*
+*This class allows you to load lambda files and calculate the unprotonated fractions. Additionally, you can compute the running unprotonated fractions over the simulation time.*
 
 2.) class plotting_lambda_data
 
@@ -44,7 +44,7 @@ This simulation was conducted on a small test case protein BBL (PDBid: 1W4H).
 # Background
 
 In CpHMD simulations each titratable site, *i*, is treated as a continuous titration coordinate λ<sub>*i*</sub>, which is bound between 0 and 1, to govern the progress of that titratable site's protonation/deprotonation.
-In practice the λ-value does not always sample exactly either 0 or 1, so a cutoff of 0.2 is used to define whether a given titratable site is protonated or deprotonated.
+In practice, the λ-value does not always sample exactly either 0 or 1, so a cutoff of 0.2 is used to define whether a given titratable site is protonated or deprotonated.
 The cutoff value described here is the default cutoff value for all calculations in the CpHMD-Analysis python library.
 
 <p align="center">
