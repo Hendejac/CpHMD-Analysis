@@ -67,7 +67,7 @@ By calculating the *S*<sub>*i*</sub><sup>*unprot*</sup> at each simulated pH and
 </p>
 
 In the Henderson-Hasselbalch equation *n* is the Hill coefficient, which represents the slope of the transition region of the titration curve.
-One detail that you might be wondering about is the handling of tautomeric state of the titratable residues such as Histidine, Aspartic Acid, and Glutamic Acid.
+One detail that you might be wondering about is the handling of the tautomeric state of the titratable residues such as Histidine, Aspartic Acid, and Glutamic Acid.
 In these cases an additional coordinate, χ, is used. 
 Like the λ-value, the χ-value also continuously moves between 0 and 1 representing one or the other tautomeric states and is defined with a cutoff of 0.2.
 For greater detail on λ- and χ-values please read the articles in the **further reading section**.
