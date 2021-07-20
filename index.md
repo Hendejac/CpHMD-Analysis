@@ -18,15 +18,15 @@ This is the python library and is composed of 4 classes and 2 functions.
 #### Included Classes
 1.) class lambda_data
 
-*This class allows you to load lambda files and calculate the unprotated fractions and compute the running unprotated fractions over the simulation time.*
+*This class allows you to load lambda files and calculate the unprotonated fractions and compute the running unprotonated fractions over the simulation time.*
 
 2.) class plotting_lambda_data
 
-*This class allows for plotting of the running unprotonated fractions over time and titration curves of titratable residues.*
+*This class allows for the plotting of the running unprotonated fractions over time and titration curves of titratable residues.*
 
 3.) class log_analysis_charmm 
 
-*This class allows for the loading, processing, and plotting of CHARMM (version >C40) formatted log files, resulting in replica exchange statistics and plotting the replica walk through pH space.*
+*This class allows for the loading, processing, and plotting of CHARMM (version >C40) formatted log files, resulting in replica-exchange statistics and plotting the replica walk through pH space.*
 
 4.) class log_analysis_amber
 
@@ -37,7 +37,7 @@ This jupyter notebook is a step-by-step walk through of how to load, process, an
 This juptyer notebook can be used as a starting point for your CpHMD project.
 
 ### 3 - amber_example_data
-The included jupyter notebook can be run on the amber_example_data, which is provide in two directories sample_1 and sample_2.
+The included jupyter notebook can be run on the amber_example_data, which is provided in two directories sample_1 and sample_2.
 In the directory "sample_1" there is a set of lambda files and a log file from an initial run of pH-based replica exchange of CpHMD using implicit solvent (solvent model: GBNeck2) and "sample_2" has a set of lambda files and a log file from the restart of the simulation. 
 This simulation was conducted on a small test case protein BBL (PDBid: 1W4H). 
 
