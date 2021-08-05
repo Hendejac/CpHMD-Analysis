@@ -9,7 +9,7 @@
 The purpose of the CpHMD-Analysis tool is to aid users in processing lambda and log files from Constant pH Molecular Dynamics (CpHMD) simulations run from the molecular dynamics software packages in [Amber](https://ambermd.org/) and [CHARMM](https://www.charmm.org/).
 This python library is equipped to calculate the unprotonated fraction, pure and mixed states, running unprotonated fractions, and pK<sub>a</sub>s of titratable residues from the lambda files produced by CpHMD simulations.
 Additionally, functions have been added to the library to make plotting the running unprotonated fractions and titrations curves quick and easy. 
-Since CpHMD is often used with a pH-based replica-exchange protocol the library also can calculate exchange statics and plot the replica walks. 
+Since CpHMD is often used with a pH-based replica-exchange protocol the library also can calculate exchange statics and plots the replica walks. 
 
 # What's Included? 
 
